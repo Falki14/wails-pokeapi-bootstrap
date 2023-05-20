@@ -18,7 +18,7 @@
     GetPokemonList().then((result) => (pokemons = result));
   }
 
-  function getImageUrlsByBreed() {
+  function getImageUrlsByPokemon() {
     init();
     showRandomPhoto = false;
     showBreedPhotos = false;
@@ -38,7 +38,7 @@
       </option>
     {/each}
   </select>
-  <button class="btn btn-primary col-12 mt-2" on:click={getImageUrlsByBreed}>
+  <button class="btn btn-primary col-12 mt-2" on:click={getImageUrlsByPokemon}>
     Fetch by this pokemon
   </button>
 </div>
